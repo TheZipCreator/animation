@@ -19,7 +19,7 @@ random.seed(time.time());
 
 song = AudioSegment.from_mp3("song.mp3");
 bpm = 90;
-offset = 150*1000; # offset from start of song in milliseconds (for debug)
+offset = 0*1000; # offset from start of song in milliseconds (for debug)
 song = song[offset:];
 start_time = time.time()-(offset/1000.0);
 
